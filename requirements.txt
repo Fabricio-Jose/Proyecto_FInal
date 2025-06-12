@@ -1,0 +1,36 @@
+# --- requirements.txt ---
+
+# Requisitos de backend
+
+# Core
+ast
+
+# DB
+sqlite3
+
+# Otros
+
+
+# --- README.md ---
+
+# ERPDiff VSCode Plugin (Backend)
+
+Este repositorio contiene la parte backend del sistema ERPDiff para analizar diferencias entre versiones de código (como Odoo) y generar recomendaciones para migraciones.
+
+## Cómo usar
+
+```bash
+python server/main.py /ruta/a/version1 /ruta/a/version2
+```
+
+## Estructura del Proyecto
+
+- `analyzer/`: Comparación AST, relaciones, XML.
+- `recommender/`: Motor de recomendaciones y métricas.
+- `storage/`: Persistencia con SQLite.
+- `utils/`: Herramientas auxiliares como Git.
+
+## Estado
+
+✅ Base de detección por AST.
+🕓 Pendiente integración con VSCode y visualización.
